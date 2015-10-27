@@ -23,8 +23,11 @@ Feature selection were done with notebooks in the feature_selection folder. Mult
 ### Grid search and model optimization
 Grid search for hyperparameter tuning was done using either sklearn gridsearchCV or the home-built method that generates prediction on the test set during cross-validation, the prediction can be used later as meta-features. Grid search were done with different algorithms such as xgboost, random forest, online svm and logistic regression.
 
-### Model blending/ensembling
-Model blending using greedy bagging or fit_LS
-
 ### Final prediction
 Final predictions are made with both level-0 and level-1 models using both basic features, derived features, and meta-features.
+
+### Model ensembling
+Model ensembling using greedy bagging method: http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml04.icdm06long.pdf
+The idea is to select the models from a library of models to achieve the highest cross-validation score (AUC in this case).
+The models are selected using a forward greedy approach with replacement, i.e., at each step a new model is added to the existing model bag to optimize the score. At the end of the selection, the weight of each model is given by the number of times it appears in the bag, and is used to perform the final ensembling on the test predictions.
+
