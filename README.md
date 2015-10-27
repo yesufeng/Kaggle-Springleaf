@@ -1,5 +1,5 @@
 # Kaggle-Springleaf
-Kaggle competition: Springleaf Marketing Response
+Kaggle competition: Springleaf Marketing Response by team CCTO
 
 ## Introduction
 This repo contains ipython notebooks prepared for the Kaggle competition: Springleaf Marketing Response.Springleaf offers their customers personal and auto loans that help them take control of their lives and their finances. Direct mail is one important way Springleaf's team can connect with customers whom may be in need of a loan. In order to improve their targeted effort, Springleaf would like to focus on the customers who are likely to respond and be good candidates for their services.
