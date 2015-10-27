@@ -28,6 +28,7 @@ Final predictions are made with both level-0 and level-1 models using both basic
 
 ### Model ensembling
 Model ensembling using greedy bagging method: http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml04.icdm06long.pdf
+
 The idea is to select the models from a library of models to achieve the highest cross-validation score (AUC in this case).
 The models are selected using a forward greedy approach with replacement, i.e., at each step a new model is added to the existing model bag to optimize the score. At the end of the selection, the weight of each model is given by the number of times it appears in the bag, and is used to perform the final ensembling on the test predictions.
 
