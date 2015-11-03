@@ -19,6 +19,9 @@ In the preprocessing folder, feature data were processed differently based on di
 
 ### Feature selection
 Feature selection were done with notebooks in the feature_selection folder. Multiple methods were used to do feature selection, including RFECV, greedy forward selection, backward selection and the SelectKBest from sklearn.
+Model inputs for different models:
+  1. linear models (Logistic, SVM, Passive aggressive): numerical variables
+  2. tree-based models (xgBoost, random forest, scikit learn gradient boosting): numerical + catigorical variables
 
 ### Grid search and model optimization
 Grid search for hyperparameter tuning was done using either sklearn gridsearchCV or the home-built method that generates prediction on the test set during cross-validation, the prediction can be used later as meta-features. Grid search were done with different algorithms such as xgboost, random forest, online svm and logistic regression.
