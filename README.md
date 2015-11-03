@@ -24,7 +24,7 @@ Feature selection were done with notebooks in the feature_selection folder. Mult
 Grid search for hyperparameter tuning was done using either sklearn gridsearchCV or the home-built method that generates prediction on the test set during cross-validation, the prediction can be used later as meta-features. Grid search were done with different algorithms such as xgboost, random forest, online svm and logistic regression.
 
 ### Final prediction
-Final predictions are made with both level-0 and level-1 models using both basic features, derived features, and meta-features.
+Final predictions are made with both level-0 and level-1 models using both basic features, derived features, and meta-features, using models including xgBoost, RandomForest, SGD-logistic regression, SGD support vector machines, SDG passive agressive classfier.
 
 ### Model ensembling
 Model ensembling using greedy bagging method: http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml04.icdm06long.pdf
